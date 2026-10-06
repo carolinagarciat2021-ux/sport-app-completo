@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!-- Fila de cabecera: Pedido #, fecha, cliente (si admin/vendedor), estado, flecha -->
+        <LinearLayout
+            android:id="@+id/filaCabecera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNumeroPedido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/azul_principal"
+                    tools:text="Pedido #20" />
+
+                <TextView
+                    android:id="@+id/tvFechaCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/gris_texto"
+                    tools:text="2026-10-03 — Carolina Taborda" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvEstadoPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_badge_rounded"
+                tools:text="Pendiente" />
+
+            <TextView
+                android:id="@+id/tvTotalPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/verde_exito"
+                tools:text="$192.000" />
+
+            <ImageView
+                android:id="@+id/ivFlecha"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:src="@android:drawable/arrow_down_float" />
+        </LinearLayout>
+
+        <!-- Detalle, oculto hasta que se toque la cabecera -->
+        <LinearLayout
+            android:id="@+id/contenedorDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

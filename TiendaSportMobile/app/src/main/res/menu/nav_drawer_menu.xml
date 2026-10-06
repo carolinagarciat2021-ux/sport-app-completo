@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_cliente" android:checkableBehavior="single">
+        <item android:id="@+id/nav_catalogo" android:icon="@android:drawable/ic_menu_view" android:title="Catálogo" />
+        <item android:id="@+id/nav_carrito" android:icon="@android:drawable/ic_menu_add" android:title="Carrito" />
+        <item android:id="@+id/nav_mis_pedidos" android:icon="@android:drawable/ic_menu_agenda" android:title="Mis Pedidos" />
+    </group>
+
+    <group android:id="@+id/group_admin" android:checkableBehavior="single">
+        <item android:id="@+id/nav_inventario" android:icon="@android:drawable/ic_menu_sort_by_size" android:title="Inventario (Admin)" />
+        <item android:id="@+id/nav_registrar_producto" android:icon="@android:drawable/ic_input_add" android:title="Registrar Producto (Admin)" />
+        <item android:id="@+id/nav_categorias" android:icon="@android:drawable/ic_menu_myplaces" android:title="Categorías (Admin)" />
+        <item android:id="@+id/nav_usuarios" android:icon="@android:drawable/ic_menu_my_calendar" android:title="Usuarios (Admin)" />
+        <item android:id="@+id/nav_pedidos_admin" android:icon="@android:drawable/ic_menu_recent_history" android:title="Pedidos de Clientes" />
+    </group>
+
+    <item android:id="@+id/nav_cerrar_sesion" android:icon="@android:drawable/ic_lock_power_off" android:title="Cerrar Sesión" />
+
+</menu>

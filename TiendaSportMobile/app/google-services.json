@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "217209268060",
+    "project_id": "ventaropadeportiva-ac554",
+    "storage_bucket": "ventaropadeportiva-ac554.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217209268060:android:c3afbe9e59e9dc57054399",
+        "android_client_info": {
+          "package_name": "com.sportapp.tiendasportmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABcrGpdU0eQwtGytbb57VZq98RINkigT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

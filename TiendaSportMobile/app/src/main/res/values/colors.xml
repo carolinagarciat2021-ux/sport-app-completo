@@ -1,0 +1,9 @@
+<resources>
+    <color name="azul_principal">#1A2A6C</color>
+    <color name="verde_exito">#2E7D32</color>
+    <color name="rojo_alerta">#D32F2F</color>
+    <color name="amarillo_aviso">#F9A825</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="gris_fondo">#F8F9FA</color>
+    <color name="gris_texto">#555555</color>
+</resources>

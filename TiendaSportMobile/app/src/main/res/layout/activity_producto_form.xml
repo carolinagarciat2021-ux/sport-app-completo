@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nombre del Producto (*):" android:textStyle="bold" android:layout_marginTop="8dp"/>
+        <EditText android:id="@+id/etNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@android:drawable/edit_text" android:padding="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Descripción:" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/etDescripcion" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="2" android:background="@android:drawable/edit_text" android:padding="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Género:" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <Spinner android:id="@+id/spinnerGeneroForm" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Categoría:" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <Spinner android:id="@+id/spinnerCategoriaForm" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tallas Disponibles (*):" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <!-- 2 filas de 3 checkboxes (sin depender de ninguna librería nueva) -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <CheckBox android:id="@+id/cbXS" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="XS"/>
+            <CheckBox android:id="@+id/cbS" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="S"/>
+            <CheckBox android:id="@+id/cbM" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="M"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <CheckBox android:id="@+id/cbL" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="L"/>
+            <CheckBox android:id="@+id/cbXL" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="XL"/>
+            <CheckBox android:id="@+id/cbXXL" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="XXL"/>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Colores Disponibles (separados por coma):" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/etColores" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Ej: Negro, Azul, Rosa" android:background="@android:drawable/edit_text" android:padding="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Costo del Producto (*):" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/etCosto" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:background="@android:drawable/edit_text" android:padding="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Precio Mayorista (*):" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/etPrecioMayorista" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="numberDecimal" android:background="@android:drawable/edit_text" android:padding="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stock Disponible Real (*):" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/etStock" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:background="@android:drawable/edit_text" android:padding="10dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="URL de Imagen (recomendado):" android:textStyle="bold" android:layout_marginTop="12dp"/>
+        <EditText android:id="@+id/etImagenUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="https://.../imagen.png" android:background="@android:drawable/edit_text" android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnGuardarProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Guardar Producto en Base de Datos"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/azul_principal"/>
+
+    </LinearLayout>
+</ScrollView>
