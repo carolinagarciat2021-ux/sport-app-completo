@@ -37,3 +37,7 @@ yarn-error.log*
 Thumbs.db
 Desktop.ini
 hs_err_pid*.log
+
+# Ignorar propiedades de configuración con credenciales
+**/application-prod.properties
+**/local.properties
